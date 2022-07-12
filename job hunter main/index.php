@@ -1,14 +1,4 @@
-<?php
-session_start();
-unset($_SESSION['job']);
-unset($_SESSION['time']);
-unset($_SESSION['level']);
-unset($_SESSION['pf']);
-unset($_SESSION['pt']);
-unset($_SESSION['c']);
 
-unset($_SESSION['idd']);
-?>
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -35,7 +25,17 @@ unset($_SESSION['idd']);
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
    </head>
+<?php
+session_start();
+unset($_SESSION['job']);
+unset($_SESSION['time']);
+unset($_SESSION['level']);
+unset($_SESSION['pf']);
+unset($_SESSION['pt']);
+unset($_SESSION['c']);
 
+unset($_SESSION['idd']);
+?>
    <body onload="myFunction()">
     <!-- Preloader Start -->
     <div id="preloader-active">
